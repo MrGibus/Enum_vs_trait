@@ -242,5 +242,8 @@ Found 1 outliers among 100 measurements (1.00%)
 - Neither method appears more complex than the other.
 - Both methods can utilise generics equally. 
 - Enums are noticeably more performant that traits.
-- Generics make no noticable impact on performance for enums but a marginal impact for traits. No explanation for this.
+- Generics make no noticable impact on performance for enums bRemove previous architecture and renameut a marginal impact for traits. No explanation for this.
 
+## Scalability Disclaimer
+After changing the architecture in a larger project from a dynamic trait based system to an enum-based system. Significant performance drops were noticed (Doubled the time taken).
+Still investigating the causes of this as it's likely a niche issue.
